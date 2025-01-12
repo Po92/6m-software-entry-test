@@ -11,13 +11,21 @@
 
 
 // Task 1: Add code here
-
+const pat = [];
 function addPatient(patientName){
     // Task 2: Add code here
+    pat.push(patientName);
 }
 
 // Task 3: Add code here
-
+function listPatient(){
+    let pats ="["; 
+    for (let i=0; i< pat.length-1; i++) {
+        pats+='"'+pat[i]+'", ';
+    }
+    pats+='"'+pat[pat.length-1]+'"]';
+    console.log(pats);
+    }
 
 addPatient("John");
 addPatient("Mary");

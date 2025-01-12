@@ -21,9 +21,8 @@ const dog = {
     breed: "dog"
 }
 
-const cat = dog; // Modify this line
+const cat = { ...dog}; // Modify this line
 
 cat.breed = "cat";
-
 console.log("dog", dog); // If success, prints "dog { breed: 'dog' }"
 
